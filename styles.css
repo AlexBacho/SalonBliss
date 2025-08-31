@@ -77,8 +77,8 @@ strong{font-weight:600}
 }
 
 .logo {
-  max-width: 260px;   /* bigger but responsive */
-  width: 100%;
+  width: auto;              /* don’t force full width */
+  max-width: 160px;         /* limit size */
   height: auto;
   margin: 0 auto 14px;
   display: block;
