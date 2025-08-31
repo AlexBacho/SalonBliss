@@ -1,0 +1,9 @@
+:root { --max: 960px; --pad: 16px; font-family: system-ui, sans-serif; }
+body { margin: 0; line-height: 1.6; }
+header { padding: 64px var(--pad); text-align: center; background: #fafafa; }
+h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 48px); }
+section { max-width: var(--max); margin: 40px auto; padding: 0 var(--pad); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 12px; }
+img { width: 100%; height: auto; border-radius: 8px; }
+a { text-decoration: none; }
+footer { padding: 24px var(--pad); text-align: center; color: #666; }
