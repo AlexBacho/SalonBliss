@@ -1,9 +1,72 @@
-:root { --max: 960px; --pad: 16px; font-family: system-ui, sans-serif; }
-body { margin: 0; line-height: 1.6; }
-header { padding: 64px var(--pad); text-align: center; background: #fafafa; }
-h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 48px); }
-section { max-width: var(--max); margin: 40px auto; padding: 0 var(--pad); }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 12px; }
-img { width: 100%; height: auto; border-radius: 8px; }
-a { text-decoration: none; }
-footer { padding: 24px var(--pad); text-align: center; color: #666; }
+/* Typography & base */
+:root{
+  --ink:#2a2a2a;
+  --muted:#54606b;
+  --accent:#6e86a6;      /* bluish like the flyer */
+  --paper:#f9fafb;
+  --card:#ffffffcc;
+  --radius:18px;
+  --shadow: 0 6px 24px rgba(20,28,40,.08);
+  font-synthesis-weight none;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--ink);
+  background: var(--paper);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3{
+  font-family: "Playfair Display", Georgia, serif;
+  line-height:1.25;
+  color:#1f2a36;
+  margin:0 0 .5rem;
+}
+h2{font-size:clamp(22px,3.2vw,30px)}
+h3{font-size:clamp(18px,2.5vw,22px)}
+p{margin:.5rem 0 1rem}
+strong{font-weight:600}
+
+/* Layout */
+.container{max-width:980px;margin:0 auto;padding:0 18px}
+.hero{padding:48px 18px 28px;text-align:left;position:relative}
+.logo{height:68px;width:auto;display:block}
+.tag{
+  margin:.5rem 0 0;
+  color:var(--muted);
+  font-weight:500;
+  letter-spacing:.2px;
+}
+
+/* Watercolor background (works with or without image) */
+.watercolor{
+  position:fixed; inset:0; z-index:-1;
+  background:
+    radial-gradient(1200px 600px at 15% 10%, rgba(158,174,206,.28), transparent 60%),
+    radial-gradient(800px 400px at 85% 15%, rgba(180,170,200,.22), transparent 60%),
+    radial-gradient(900px 500px at 70% 80%, rgba(200,205,215,.18), transparent 60%),
+    url("images/bg-watercolor.jpg");
+  background-size:cover,cover,cover,cover;
+  background-repeat:no-repeat;
+  filter:saturate(.95) contrast(1.02);
+}
+
+/* Cards / sections */
+.card{
+  background:var(--card);
+  backdrop-filter: blur(2px);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:22px 20px;
+  margin:18px 0;
+}
+.note{color:var(--muted);font-size:.98rem}
+
+/* Services list styled like the leaflet bullets */
+.bullets{list-style:none;margin:12px 0 0;padding:0}
+.bullets li{
+  display:flex; gap:.6rem; align-items:flex-start;
+  padding:.28rem 0; font-size:1.02rem
