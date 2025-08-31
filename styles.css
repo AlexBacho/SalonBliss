@@ -32,14 +32,6 @@ strong{font-weight:600}
 
 /* Layout */
 .container{max-width:980px;margin:0 auto;padding:0 18px}
-.hero{padding:48px 18px 28px;text-align:left;position:relative}
-.logo{height:68px;width:auto;display:block}
-.tag{
-  margin:.5rem 0 0;
-  color:var(--muted);
-  font-weight:500;
-  letter-spacing:.2px;
-}
 
 /* Watercolor background (works with or without image) */
 .watercolor{
@@ -70,3 +62,32 @@ strong{font-weight:600}
 .bullets li{
   display:flex; gap:.6rem; align-items:flex-start;
   padding:.28rem 0; font-size:1.02rem
+    
+.hero {
+  padding: 60px 18px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 260px;   /* bigger but responsive */
+  width: 100%;
+  height: auto;
+  margin: 0 auto 14px;
+  display: block;
+}
+
+.tag {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
