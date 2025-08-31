@@ -1,66 +1,105 @@
 <!doctype html>
-<html lang="en">
+<html lang="sk">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lumi Skin Studio – Bratislava</title>
-  <meta name="description" content="Skincare studio in Bratislava. Facials, chemical peels, dermaplaning. Call to book.">
+  <title>Bliss – Kozmetický salón</title>
+  <meta name="description" content="Novootvorený kozmetický salón Bliss – kde sa krása spája s relaxom. Ošetrenia pleti, hydrabrázia, masáž tváre, dermabrázia, kyselina hyalurónová a viac.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <meta property="og:title" content="Lumi Skin Studio – Bratislava">
-  <meta property="og:description" content="Facials, peels, dermaplaning.">
+  <meta property="og:title" content="Bliss – Kozmetický salón">
+  <meta property="og:description" content="Doprajte svojej pleti to najlepšie.">
   <meta property="og:image" content="images/og.jpg">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"BeautySalon",
-    "name":"Lumi Skin Studio",
-    "image":"https://your-domain.sk/images/og.jpg",
-    "address":{"@type":"PostalAddress","streetAddress":"Example 12","addressLocality":"Bratislava","postalCode":"811 01","addressCountry":"SK"},
-    "telephone":"+421 900 123 456",
-    "url":"https://your-domain.sk",
-    "priceRange":"€€",
-    "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"18:00"}]
+    "name":"Bliss – kozmetický salón",
+    "image":"https://YOUR-DOMAIN/images/og.jpg",
+    "address":{"@type":"PostalAddress","streetAddress":"Mestská športová hala, 1. poschodie","addressLocality":"(vaše mesto)","postalCode":"","addressCountry":"SK"},
+    "telephone":"+421904906751",
+    "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"19:00"}],
+    "priceRange":"€",
+    "description":"Novootvorený kozmetický salón Bliss, kde sa krása spája s relaxom. Pracujeme s prémiovou francúzskou kozmetikou Algotherm."
   }
   </script>
 </head>
 <body>
-  <header>
-    <h1>Lumi Skin Studio</h1>
-    <p>Facials • Chemical Peels • Dermaplaning</p>
-    <p>
-      <a href="tel:+421900123456">Call</a> ·
-      <a href="https://wa.me/421900123456">WhatsApp</a> ·
-      <a href="mailto:hello@your-domain.sk">Email</a> ·
-      <a href="https://maps.google.com/?q=Lumi+Skin+Studio+Bratislava" target="_blank">Directions</a>
-    </p>
+  <div class="watercolor"></div>
+
+  <header class="container hero">
+    <img class="logo" src="images/logo.png" alt="Bliss – kozmetický salón" />
+    <p class="tag">Doprajte svojej pleti to najlepšie</p>
   </header>
 
-  <section id="services">
-    <h2>Services & Prices</h2>
-    <ul>
-      <li>Signature Facial – 60 min – €59</li>
-      <li>Chemical Peel (AHA/BHA) – 45 min – €69</li>
-      <li>Dermaplaning – 45 min – €55</li>
-      <li>Hydration Boost – 30 min – €39</li>
-    </ul>
-    <p><em>No online reservations — call or WhatsApp to book.</em></p>
-  </section>
+  <main class="container">
+    <section class="intro card">
+      <h2>Novootvorený kozmetický salón</h2>
+      <p>
+        Predstavujeme Vám novootvorený kozmetický salón <strong>Bliss</strong>, kde sa krása spája s relaxom.
+        Nájdete nás v <strong>Mestskej športovej hale – na 1. poschodí</strong> v moderných priestoroch,
+        kde si oddýchnete a zároveň poskytnete svojej pleti špičkovú starostlivosť.
+      </p>
+      <p>
+        Pracujeme s <strong>prémiovou francúzskou kozmetikou Algotherm</strong>, ktorá už od roku 1962 využíva
+        silu morských rias na regeneráciu a krásu pleti. Výsledky? <em>Viditeľné a dlhodobé!</em>
+      </p>
+    </section>
 
-  <section id="gallery">
-    <h2>Before & After</h2>
-    <div class="grid">
-      <img src="images/before-after-1.jpg" alt="Acne treatment results" loading="lazy">
-      <img src="images/before-after-2.jpg" alt="Glow facial results" loading="lazy">
-    </div>
-  </section>
+    <section class="services card">
+      <h2>Čo Vám ponúkame</h2>
+      <ul class="bullets">
+        <li><span class="ico">●</span> Trojfázové čistenie + hydrabrázia</li>
+        <li><span class="ico">●</span> Masáže tváre a dekoltu</li>
+        <li><span class="ico">●</span> Efektívna terapia a čistenie s ultrazvukovou špachtľou</li>
+        <li><span class="ico">●</span> Diamantová dermabrázia – hĺbkové čistenie a omladenie</li>
+        <li><span class="ico">●</span> Hyalurónové pero – výplň vrások</li>
+        <li><span class="ico">●</span> Ošetrenie pre športom namáhanú pleť a viac!</li>
+        <li><span class="ico">●</span> Ošetrenie detoxikačnou radou Ocean Defense</li>
+        <li><span class="ico">●</span> Ošetrenie očného okolia</li>
+      </ul>
+      <p class="note">Objednávky zatiaľ <strong>telefonicky</strong> alebo cez <strong>WhatsApp</strong>.</p>
+    </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Licensed esthetician. Skin-first philosophy with clinically proven products.</p>
-  </section>
+    <section class="highlights grid">
+      <div class="highlight card">
+        <div class="hl-head">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 10h10M5 6h14M3 14h18M5 18h14" /></svg>
+          <h3>Bezplatné parkovanie</h3>
+        </div>
+        <p>Priamo pri budove.</p>
+      </div>
+      <div class="highlight card">
+        <div class="hl-head">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 6v6l4 2M12 22a10 10 0 1 0 0-20a10 10 0 0 0 0 20z"/></svg>
+          <h3>Objednávky</h3>
+        </div>
+        <p>Pondelok – Sobota <strong>8:00 – 19:00</strong></p>
+      </div>
+      <div class="highlight card">
+        <div class="hl-head">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <h3>Ceny už od 12 €</h3>
+        </div>
+        <p>Príjemná starostlivosť pre každého.</p>
+      </div>
+    </section>
 
-  <footer>
-    <small>© Lumi Skin Studio · Example 12, Bratislava · IČO 12 345 678</small>
+    <section class="cta card">
+      <h2>Krása je zdravie, ktoré je vidieť.</h2>
+      <p>Rezervujte si termín ešte dnes.</p>
+      <p class="actions">
+        <a class="btn" href="tel:+421904906751">Zavolať</a>
+        <a class="btn ghost" href="https://wa.me/421904906751">WhatsApp</a>
+        <a class="btn ghost" href="mailto:hello@your-domain.sk">Email</a>
+        <a class="btn ghost" target="_blank" href="https://maps.google.com/?q=Bliss+kozmeticky+salon">Navigovať</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© Bliss – kozmetický salón · Mestská športová hala, 1. poschodie · Tel.: +421 904 906 751</small>
   </footer>
 </body>
 </html>
