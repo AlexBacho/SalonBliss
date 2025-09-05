@@ -23,7 +23,7 @@ body {
 
 body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--ink);
+  color: #263040;
   background: var(--paper);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -35,8 +35,9 @@ h2,
 h3 {
   font-family: "Playfair Display", Georgia, serif;
   line-height: 1.25;
-  color: #1f2a36;
+  color: #23304a;
   margin: 0 0 .5rem;
+  text-shadow: 0 2px 8px rgba(180,190,220,0.08);
 }
 
 h2 {
@@ -68,23 +69,26 @@ strong {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(1200px 600px at 15% 10%, rgba(158, 174, 206, .28), transparent 60%),
-    radial-gradient(800px 400px at 85% 15%, rgba(180, 170, 200, .22), transparent 60%),
-    radial-gradient(900px 500px at 70% 80%, rgba(200, 205, 215, .18), transparent 60%),
-    url("images/bg-watercolor.jpg");
-  background-size: cover, cover, cover, cover;
-  background-repeat: no-repeat;
-  filter: saturate(.95) contrast(1.02);
+    url("images/background.png") center center/cover no-repeat,
+    radial-gradient(1200px 600px at 15% 10%, rgba(158, 174, 206, .18), transparent 60%),
+    radial-gradient(800px 400px at 85% 15%, rgba(180, 170, 200, .12), transparent 60%),
+    radial-gradient(900px 500px at 70% 80%, rgba(200, 205, 215, .10), transparent 60%);
+  background-blend-mode: lighten, normal, normal, normal;
+  filter: saturate(.98) contrast(1.01);
 }
 
 /* Cards / sections */
 .card {
-  background: var(--card);
-  backdrop-filter: blur(2px);
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(4px) saturate(1.08);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 22px 20px;
+  box-shadow: 0 8px 32px rgba(20,28,40,0.10);
+  padding: 18px 16px;
   margin: 18px 0;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 12px 36px rgba(20,28,40,0.13);
 }
 
 .note {
@@ -123,7 +127,7 @@ strong {
 .logo {
   width: auto;
   /* don’t force full width */
-  max-width: 160px;
+  max-width: 320px;
   /* limit size */
   height: auto;
   margin: 0 auto 14px;
@@ -140,14 +144,44 @@ strong {
 
 .circle-img {
   width: 100%;
-  max-width: 260px;
+  max-width: 720px;
   aspect-ratio: 1/1;
   height: auto;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 2px 12px rgba(20,28,40,0.13);
-  margin-bottom: 18px;
+  margin-bottom: 0px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contact-table {
+  width: 100%;
+  margin: 0 0 10px 0;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  font-size: 1.04rem;
+}
+.contact-table td {
+  padding: 3px 8px 3px 0;
+  vertical-align: top;
+  color: var(--ink);
+}
+.contact-table tr td:first-child {
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.contact-table a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-table a:hover {
+  text-decoration: underline;
+}
+
+.objednavky p {
+  margin: 0.2em 0 0.4em 0;
 }
